@@ -1,4 +1,4 @@
-package com.sky.test;
+package com.sky;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.data.redis.connection.DataType;

@@ -1,4 +1,4 @@
-package com.sky.test;
+package com.sky;
 
 import com.google.gson.JsonObject;
 import net.minidev.json.JSONObject;

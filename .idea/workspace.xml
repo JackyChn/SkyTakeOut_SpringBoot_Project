@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="217b4003-66e7-4dab-995e-5025321ca173" name="Changes" comment="HttpClient Test Complete">
-      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/controller/user/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sky-server/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b4daae98-66a2-4020-83b8-c2dceb87ec69.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b4daae98-66a2-4020-83b8-c2dceb87ec69.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-server/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="217b4003-66e7-4dab-995e-5025321ca173" name="Changes" comment="WeChat User Login" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -169,7 +157,7 @@
       <workItem from="1700816663516" duration="6517000" />
       <workItem from="1700828476441" duration="1089000" />
       <workItem from="1700899050702" duration="724000" />
-      <workItem from="1700900920216" duration="7341000" />
+      <workItem from="1700900920216" duration="8209000" />
     </task>
     <task id="LOCAL-00001" summary="Starting from Chapter 6 HttpClient">
       <option name="closed" value="true" />
@@ -195,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700822567404</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="WeChat User Login">
+      <option name="closed" value="true" />
+      <created>1700909100717</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700909100717</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +203,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Starting from Chapter 6 HttpClient" />
     <MESSAGE value="HttpClient Test Complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="HttpClient Test Complete" />
+    <MESSAGE value="WeChat User Login" />
+    <option name="LAST_COMMIT_MESSAGE" value="WeChat User Login" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

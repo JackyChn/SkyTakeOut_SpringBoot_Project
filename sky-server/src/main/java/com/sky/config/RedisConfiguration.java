@@ -18,7 +18,7 @@ public class RedisConfiguration {
 //        set connection factory object
         redisTemplate.setConnectionFactory(redisConnectionFactory);
 
-//        set key serializer
+//        set key serializer (an algorithm turns data to string and put it in redis)
         redisTemplate.setKeySerializer(new StringRedisSerializer());
         return redisTemplate;
     }

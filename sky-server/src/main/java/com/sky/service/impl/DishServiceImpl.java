@@ -156,6 +156,18 @@ public class DishServiceImpl implements DishService {
 
     }
 
+
+    /**
+     * Set Dish Status
+     * @param status
+     * @param id
+     */
+    public void startOrStop(Integer status, Long id) {
+        Dish dish = dishMapper.getById(id);
+        dish.setStatus(status);
+        dishMapper.updateDish(dish);
+    }
+
     /**
      * 根据分类id查询菜品
      * @param categoryId

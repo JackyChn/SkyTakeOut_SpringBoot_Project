@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="217b4003-66e7-4dab-995e-5025321ca173" name="Changes" comment="clean local Redis cache when dish info changed">
+    <list default="true" id="217b4003-66e7-4dab-995e-5025321ca173" name="Changes" comment="setMeal local cache annotation added(redis &amp; mysql)">
+      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/controller/user/ShoppingCartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/mapper/ShoppingCartMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/ShoppingCartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/impl/ShoppingCartServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sky-server/src/main/resources/mapper/ShoppingCartMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/SkyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/SkyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/controller/admin/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/controller/admin/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/controller/admin/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/controller/admin/SetmealController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/controller/user/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/controller/user/SetmealController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/impl/DishServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/impl/DishServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-server/target/classes/com/sky/controller/admin/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/target/classes/com/sky/controller/admin/CategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-server/target/classes/com/sky/service/DishService.class" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/target/classes/com/sky/service/DishService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-server/target/classes/com/sky/service/impl/DishServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/target/classes/com/sky/service/impl/DishServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,14 +21,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="XML File" />
         <option value="Class" />
+        <option value="XML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -58,7 +56,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Study/Program Codes & Projects/Projects/Java Projects/JavaProject01 Delievery/Delievery/Back-end Codes/Sky-Takeout-master",
+    "last_opened_file_path": "D:/Study/Program Codes & Projects/Projects/Java Projects/JavaProject01 Delievery/Delievery/Back-end Codes/Sky-Takeout-master/sky-server/src/main/resources/mapper",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,6 +75,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Study\Program Codes &amp; Projects\Projects\Java Projects\JavaProject01 Delievery\Delievery\Back-end Codes\Sky-Takeout-master\sky-server\src\main\resources\mapper" />
+      <recent name="D:\Study\Program Codes &amp; Projects\Projects\Java Projects\JavaProject01 Delievery\Delievery\Back-end Codes\Sky-Takeout-master\sky-server\src\main\java\com\sky\mapper" />
+      <recent name="D:\Study\Program Codes &amp; Projects\Projects\Java Projects\JavaProject01 Delievery\Delievery\Back-end Codes\Sky-Takeout-master\sky-server\src\main\java\com\sky\service\impl" />
       <recent name="D:\Study\Program Codes &amp; Projects\Projects\Java Projects\JavaProject01 Delievery\Delievery\Back-end Codes\Sky-Takeout-master\sky-server\src\main\java\com\sky\service" />
       <recent name="D:\Study\Program Codes &amp; Projects\Projects\Java Projects\JavaProject01 Delievery\Delievery\Back-end Codes\Sky-Takeout-master\sky-server\src\main\java\com\sky\controller\user" />
     </key>
@@ -183,7 +184,7 @@
       <workItem from="1701411756602" duration="786000" />
       <workItem from="1701762127166" duration="7800000" />
       <workItem from="1701772013338" duration="37000" />
-      <workItem from="1701775426110" duration="1551000" />
+      <workItem from="1701775426110" duration="12282000" />
     </task>
     <task id="LOCAL-00001" summary="Starting from Chapter 6 HttpClient">
       <option name="closed" value="true" />
@@ -241,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701769199009</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="setMeal local cache annotation added(redis &amp; mysql)">
+      <option name="closed" value="true" />
+      <created>1701776982864</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701776982864</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +264,7 @@
       <map>
         <entry key="5bbcd041-11b9-49ca-91c7-c1a216c13bf8" value="TOOL_WINDOW" />
         <entry key="65e53497-e9b7-4dd2-a0b4-086772649a01" value="TOOL_WINDOW" />
+        <entry key="693de229-9c21-44ab-8ba4-ab70f3a1f2f4" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="TAB_STATES">
@@ -309,6 +319,31 @@
             </State>
           </value>
         </entry>
+        <entry key="693de229-9c21-44ab-8ba4-ab70f3a1f2f4">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -324,7 +359,8 @@
     <MESSAGE value="Setmeal all set &amp; import codes of dish browse" />
     <MESSAGE value="data set in local ache (lessen server pressure)" />
     <MESSAGE value="clean local Redis cache when dish info changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean local Redis cache when dish info changed" />
+    <MESSAGE value="setMeal local cache annotation added(redis &amp; mysql)" />
+    <option name="LAST_COMMIT_MESSAGE" value="setMeal local cache annotation added(redis &amp; mysql)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

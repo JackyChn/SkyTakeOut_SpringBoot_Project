@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="217b4003-66e7-4dab-995e-5025321ca173" name="Changes" comment="setMeal local cache annotation added(redis &amp; mysql)">
-      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/controller/user/ShoppingCartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/mapper/ShoppingCartMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/ShoppingCartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/impl/ShoppingCartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sky-server/src/main/resources/mapper/ShoppingCartMapper.xml" afterDir="false" />
+    <list default="true" id="217b4003-66e7-4dab-995e-5025321ca173" name="Changes" comment="add/update/show/clean shopping cart">
+      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/controller/user/AddressBookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/mapper/AddressBookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/AddressBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/impl/AddressBookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sky-server/src/main/resources/mapper/AddressBookMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/impl/ShoppingCartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/impl/ShoppingCartServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +185,8 @@
       <workItem from="1701411756602" duration="786000" />
       <workItem from="1701762127166" duration="7800000" />
       <workItem from="1701772013338" duration="37000" />
-      <workItem from="1701775426110" duration="12282000" />
+      <workItem from="1701775426110" duration="12477000" />
+      <workItem from="1701826977839" duration="2236000" />
     </task>
     <task id="LOCAL-00001" summary="Starting from Chapter 6 HttpClient">
       <option name="closed" value="true" />
@@ -250,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701776982864</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add/update/show/clean shopping cart">
+      <option name="closed" value="true" />
+      <created>1701788297067</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701788297067</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +370,8 @@
     <MESSAGE value="data set in local ache (lessen server pressure)" />
     <MESSAGE value="clean local Redis cache when dish info changed" />
     <MESSAGE value="setMeal local cache annotation added(redis &amp; mysql)" />
-    <option name="LAST_COMMIT_MESSAGE" value="setMeal local cache annotation added(redis &amp; mysql)" />
+    <MESSAGE value="add/update/show/clean shopping cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="add/update/show/clean shopping cart" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

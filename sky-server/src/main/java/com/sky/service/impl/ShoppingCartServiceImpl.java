@@ -30,7 +30,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     private SetmealMapper setmealMapper;
 
     /**
-     * 添加购物车
+     * add to shopping cart
      * @param shoppingCartDTO
      */
     public void addShoppingCart(ShoppingCartDTO shoppingCartDTO) {

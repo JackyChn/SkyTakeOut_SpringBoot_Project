@@ -4,18 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="217b4003-66e7-4dab-995e-5025321ca173" name="Changes" comment="User place order">
-      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/controller/admin/OrderController.java" afterDir="false" />
+    <list default="true" id="217b4003-66e7-4dab-995e-5025321ca173" name="Changes" comment="Show order detail, history, deal with user order">
+      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/config/WebSocketConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/controller/notify/PayNotifyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/task/MyTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/task/OrderTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/task/WebSocketTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/websocket/WebSocketServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/SkyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/SkyApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/controller/user/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/controller/user/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/mapper/OrderDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/mapper/OrderDetailMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/mapper/OrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/mapper/ShoppingCartMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/mapper/ShoppingCartMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/java/com/sky/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-server/src/main/resources/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-server/src/main/resources/mapper/ShoppingCartMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/src/main/resources/mapper/ShoppingCartMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-server/target/classes/com/sky/SkyApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/sky-server/target/classes/com/sky/SkyApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,41 +55,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Study/Program Codes &amp; Projects/Projects/Java Projects/JavaProject01 Delievery/Delievery/Back-end Codes/Sky-Takeout-master/sky-server/src/main/resources/mapper&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reactor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Study/Program Codes & Projects/Projects/Java Projects/JavaProject01 Delievery/Delievery/Back-end Codes/Sky-Takeout-master/sky-server/src/main/java/com/sky/controller/notify",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reactor",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Study\Program Codes &amp; Projects\Projects\Java Projects\JavaProject01 Delievery\Delievery\Back-end Codes\Sky-Takeout-master\sky-server\src\main\java\com\sky\controller\notify" />
+      <recent name="D:\Study\Program Codes &amp; Projects\Projects\Java Projects\JavaProject01 Delievery\Delievery\Back-end Codes\Sky-Takeout-master\sky-server\src\main\java\com\sky\task" />
+      <recent name="D:\Study\Program Codes &amp; Projects\Projects\Java Projects\JavaProject01 Delievery\Delievery\Back-end Codes\Sky-Takeout-master\sky-server\src\main\java\com\sky\config" />
+      <recent name="D:\Study\Program Codes &amp; Projects\Projects\Java Projects\JavaProject01 Delievery\Delievery\Back-end Codes\Sky-Takeout-master\sky-server\src\main\java\com\sky\websocket" />
       <recent name="D:\Study\Program Codes &amp; Projects\Projects\Java Projects\JavaProject01 Delievery\Delievery\Back-end Codes\Sky-Takeout-master\sky-server\src\main\resources\mapper" />
-      <recent name="D:\Study\Program Codes &amp; Projects\Projects\Java Projects\JavaProject01 Delievery\Delievery\Back-end Codes\Sky-Takeout-master\sky-server\src\main\java\com\sky\mapper" />
-      <recent name="D:\Study\Program Codes &amp; Projects\Projects\Java Projects\JavaProject01 Delievery\Delievery\Back-end Codes\Sky-Takeout-master\sky-server\src\main\java\com\sky\service\impl" />
-      <recent name="D:\Study\Program Codes &amp; Projects\Projects\Java Projects\JavaProject01 Delievery\Delievery\Back-end Codes\Sky-Takeout-master\sky-server\src\main\java\com\sky\service" />
-      <recent name="D:\Study\Program Codes &amp; Projects\Projects\Java Projects\JavaProject01 Delievery\Delievery\Back-end Codes\Sky-Takeout-master\sky-server\src\main\java\com\sky\controller\user" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.sky.interceptor" />
@@ -158,6 +160,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TimeStamp.TimeStamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sky-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sky.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sky" />
+      <option name="MAIN_CLASS_NAME" value="com.sky.TimeStamp" />
+      <option name="METHOD_NAME" value="TimeStamp" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SkyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="sky-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sky.SkyApplication" />
@@ -167,6 +185,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TimeStamp.TimeStamp" />
         <item itemvalue="JUnit.HttpClientTest.testPost" />
         <item itemvalue="JUnit.HttpClientTest.testGet" />
         <item itemvalue="JUnit.SpringDataRedisTest.testString" />
@@ -195,7 +214,7 @@
       <workItem from="1701775426110" duration="12477000" />
       <workItem from="1701826977839" duration="7603000" />
       <workItem from="1701835366445" duration="2650000" />
-      <workItem from="1701914988354" duration="1994000" />
+      <workItem from="1701914988354" duration="11428000" />
     </task>
     <task id="LOCAL-00001" summary="Starting from Chapter 6 HttpClient">
       <option name="closed" value="true" />
@@ -285,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701838789157</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Show order detail, history, deal with user order">
+      <option name="closed" value="true" />
+      <created>1701917116338</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1701917116338</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +425,8 @@
     <MESSAGE value="add/update/show/clean shopping cart" />
     <MESSAGE value="Addressbook" />
     <MESSAGE value="User place order" />
-    <option name="LAST_COMMIT_MESSAGE" value="User place order" />
+    <MESSAGE value="Show order detail, history, deal with user order" />
+    <option name="LAST_COMMIT_MESSAGE" value="Show order detail, history, deal with user order" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

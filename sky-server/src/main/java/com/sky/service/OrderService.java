@@ -90,4 +90,17 @@ public interface OrderService {
      * @param id
      */
     void complete(Long id);
+
+    /**
+     * 支付成功，修改订单状态
+     * @param outTradeNo
+     */
+    void paySuccess(String outTradeNo);
+
+
+    /**
+     * user order reminder
+     * @param id
+     */
+    void reminder(Long id);
 }
